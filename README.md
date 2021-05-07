@@ -6,11 +6,18 @@ These are my dotfiles. Borrowed liberally from [Getting Started With Dotfiles](h
 
 On a new installation of macOS:
 
-    sudo softwareupdate -i -a
+```bash
+sudo softwareupdate -i -a
+xcode-select --install
+```
 
-Install the dotfiles with Git:
+The Xcode Command Line Tools includes `git` and `make` (not available on stock macOS).
+
+Clone manually into the desired location:
 
 ### Clone with Git
 
-    git clone https://github.com/briandrum/dotfiles.git ~/.dotfiles
-    source ~/.dotfiles/install.sh
+```bash
+git clone https://github.com/briandrum/dotfiles.git ~/.dotfiles
+source ~/.dotfiles/install.sh
+```

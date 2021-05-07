@@ -19,5 +19,11 @@ Clone manually into the desired location:
 
 ```bash
 git clone https://github.com/briandrum/dotfiles.git ~/.dotfiles
-source ~/.dotfiles/install.sh
+```
+
+Use the Makefile to install everything listed above, and symlink runcom and config (using stow):
+
+```bash
+cd ~/.dotfiles
+make
 ```

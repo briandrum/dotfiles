@@ -15,6 +15,9 @@ macos: sudo core-macos packages link
 
 core-macos: brew bash git npm ruby
 
+stow-macos: brew
+	is-executable stow || brew install stow
+
 sudo:
 ifndef GITHUB_ACTION
 	sudo -v

@@ -39,3 +39,6 @@ npm:
 
 ruby: brew
 	brew install ruby
+
+brew-packages: brew
+	brew bundle --file=$(DOTFILES_DIR)/install/Brewfile

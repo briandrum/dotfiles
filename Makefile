@@ -12,3 +12,9 @@ export ACCEPT_EULA=Y
 all: $(OS)
 
 macos: sudo core-macos packages link
+
+sudo:
+ifndef GITHUB_ACTION
+	sudo -v
+	while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+endif

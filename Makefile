@@ -61,4 +61,3 @@ brew-packages: brew
 
 cask-apps: brew
 	brew bundle --file=$(DOTFILES_DIR)/install/Caskfile || true
-	for EXT in $$(cat install/Codefile); do code --install-extension $$EXT; done

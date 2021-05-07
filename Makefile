@@ -25,3 +25,7 @@ packages: brew-packages cask-apps node-packages
 
 brew:
 	is-executable brew || curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash
+
+bash: BASH=/usr/local/bin/bash
+bash: SHELLS=/private/etc/shells
+bash: brew

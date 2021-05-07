@@ -29,3 +29,6 @@ brew:
 bash: BASH=/usr/local/bin/bash
 bash: SHELLS=/private/etc/shells
 bash: brew
+
+git: brew
+	brew install git git-extras

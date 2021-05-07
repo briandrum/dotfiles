@@ -32,3 +32,10 @@ bash: brew
 
 git: brew
 	brew install git git-extras
+
+npm:
+	if ! [ -d $(NVM_DIR)/.git ]; then git clone https://github.com/creationix/nvm.git $(NVM_DIR); fi
+	. $(NVM_DIR)/nvm.sh; nvm install --lts
+
+ruby: brew
+	brew install ruby

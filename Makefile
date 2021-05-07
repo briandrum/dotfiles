@@ -13,8 +13,12 @@ all: $(OS)
 
 macos: sudo core-macos packages link
 
+core-macos: brew bash git npm ruby
+
 sudo:
 ifndef GITHUB_ACTION
 	sudo -v
 	while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 endif
+
+packages: brew-packages cask-apps node-packages

@@ -3,4 +3,20 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
+cask "1password"
 cask "bbedit"
+cask "google-chrome"
+cask "keepingyouawake"
+cask "krisp"
+cask "notion"
+cask "rectangle"
+cask "slack"
+cask "thingsmacsandboxhelper"
+cask "zoom"
+
+# Cask Fonts (https://github.com/Homebrew/homebrew-cask-fonts)
+
+cask font-anonymous-pro
+
+# Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
+cask "sbarex-qlmarkdown"
